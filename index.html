@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+    
+    <header>
+        <nav>
+            <div class="logo">RideBook</div>
+            <div class="nav-bar">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Rides</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="#" class="login-button">Login</a>
+                <a href="#" class="signup-button">Sign Up</a>
+            </div>
+            <div class="nav-toggles">
+                <button id="hamburgerToggle"><i class="fas fa-bars"></i></button>
+            </div>
+            </div>
+        </nav>
+    
+        <!-- Hamburger Menu for Mobile -->
+        <div id="mobileMenu" class="mobile-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Rides</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+
+        <section class="home-section">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Your ride, on demand</h1>
+                <p>Get a reliable ride in minutes, anytime, anywhere.</p>
+                
+                <div class="input-container">
+                    <div class="input-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" placeholder="Enter pickup location" required>
+                    </div>
+                    <div class="input-box">
+                        <i class="fa-solid fa-location-arrow "></i>
+                        <input type="text" placeholder="Enter destination" required>
+                    </div>
+                </div>
+                <button class="see-prices-button">See Prices</button>  
+                <!-- <a href="#" class="cta-button">Sign up</a> -->
+            </div>
+        </section>
+        
+        
+<!-- ride section -->
+
+<section class="ride-options-section">
+    <div class="content">
+        <h2>Select Your Ride</h2>
+        <div class="ride-option-container">
+            <div class="ride-option">
+                <!-- <i class="fa-solid fa-car-rear"></i> -->
+                <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <h3>Standard Ride</h3>
+                <p>Comfortable and affordable ride.</p>
+                <div class="price">Price: $10</div>
+                <button class="book-button">Book Now</button>
+            </div>
+            <div class="ride-option">
+                <img src="https://images.unsplash.com/photo-1709774378962-171db2614a30?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Premium Ride">
+                <h3>Premium Ride</h3>
+                <p>Luxury vehicle with extra comfort.</p>
+                <div class="price">Price: $20</div>
+                <button class="book-button">Book Now</button>
+            </div>
+            <div class="ride-option">
+                <img src="https://images.unsplash.com/photo-1694059812161-a36a20c14c5b?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SUV Ride">
+                <h3>SUV Ride</h3>
+                <p>Spacious vehicle for larger groups.</p>
+                <div class="price">Price: $30</div>
+                <button class="book-button">Book Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Another section  -->
+
+<section class="suggestions-section">
+    <div class="content">
+        <h2>Suggested Services</h2>
+        <div class="suggestion-container">
+            <div class="suggestion-card">
+                <div class="card-icon">
+                    <i class="fas fa-box"></i> <!-- Font Awesome icon for Packages -->
+                </div>
+                <h3>Packages</h3>
+                <p>Send and receive packages with ease and reliability.</p>
+                <button class="explore-button">Send a Package</button>
+            </div>
+            <div class="suggestion-card">
+                <div class="card-icon">
+                    <i class="fas fa-calendar-check"></i> <!-- Font Awesome icon for Reservations -->
+                </div>
+                <h3>Reserve</h3>
+                <p>Reserve a ride for your special events or appointments.</p>
+                <button class="explore-button">Book Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- drivers -->
+
+<section class="driver-section">
+    <div class="driver-content">
+        <h2>Provide Your Services</h2>
+        <p>Sign in to start earning money by providing rides and services.</p>
+        <form id="driverLoginForm">
+            <div class="input-group">
+                <label for="driverEmail">Email</label>
+                <input type="email" id="driverEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="driverPassword">Password</label>
+                <input type="password" id="driverPassword" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="service-button">Login</button>
+        </form>
+        <p class="register-link">Don't have an account? <a href="#driverSignup">Sign up here</a></p>
+    </div>
+</section>
+
+
+<!-- help -->
+
+
+<section class="help-section">
+    <div class="help-content">
+        <h2>Need Assistance?</h2>
+        <p>We're here to help! Browse through our frequently asked questions or contact our support team.</p>
+        
+        <div class="faq">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-item">
+                <div class="faq-question">
+                    How do I book a ride?
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <p class="faq-answer">To book a ride, simply enter your pickup location and destination, select your ride type, and confirm your booking.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    What payment methods do you accept?
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <p class="faq-answer">We accept various payment methods including credit/debit cards, PayPal, and in-app wallet.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What payment methods do you accept?
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <p class="faq-answer">We accept various payment methods including credit/debit cards, PayPal, and in-app wallet.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What payment methods do you accept?
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <p class="faq-answer">We accept various payment methods including credit/debit cards, PayPal, and in-app wallet.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    How can I contact support?
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <p class="faq-answer">You can contact our support team via the in-app chat feature or by emailing support@ridebook.com.</p>
+            </div>
+        </div>
+        
+        <div class="contact-support">
+            <h3>Contact Support</h3>
+            <p>If you need further assistance, please reach out to us directly.</p>
+            <button class="contact-button">Contact Support</button>
+        </div>
+    </div>
+</section>
+
+
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="newsletter">
+            <p class="newsletter-title">SUBSCRIBE TO OUR NEWSLETTER</p>
+            <input type="text" placeholder="Your E-mail here" class="newsletter-input">
+            <button type="submit" class="newsletter-button">Subscribe</button>
+        </div>
+
+        <div class="footer-content">
+            <div class="brand-section">
+                <div class="brand-logo"></div>
+                <p class="brand-name">RideBook</p>
+                <p class="brand-tagline">Your Ride, Your Way</p>
+            <div class="social-media">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-telegram"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            </div>
+
+            <div class="company-info">
+                <h4>Company</h4>
+                <h4>Home</h4>
+                <h4>About</h4>
+                <h4>Services</h4>
+                <h4>Pricing</h4>
+                <h4>Contact</h4>
+            </div>
+
+            <div class="contact-info">
+                <h4>Contacts</h4>
+                <div class="contact-details">
+                    <h4><i class="fas fa-location-dot"></i> 123 Ride St, New Delhi</h4>
+                    <h4><i class="fas fa-phone"></i> (91)-123-4567-890</h4>
+                    <h4><i class="fas fa-clock"></i> Mon-Sat: 9AM-5PM</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
